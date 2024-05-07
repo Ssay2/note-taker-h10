@@ -1,1 +1,31 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taker</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>Note Taker</h1>
+    </header>
+    <main>
+        <section id="notes-list">
+            <!-- Existing notes will be listed here -->
+        </section>
+        <section id="note-details">
+            <!-- New note form and selected note details will be displayed here -->
+            <form id="note-form">
+                <input type="text" id="note-title" placeholder="Enter note title" required>
+                <textarea id="note-text" placeholder="Enter note text" required></textarea>
+                <div id="buttons">
+                    <button type="submit" id="save-button">Save Note</button>
+                    <button type="button" id="clear-button">Clear Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script> <!-- Include JavaScript file for functionality -->
+</body>
+</html>
